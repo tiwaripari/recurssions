@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+void pattern(int n)
+{
+    if(n==0)
+    {
+        return;
+    }
+
+    for(int i=1;i<=n;i++)
+    {
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    pattern(n-1);
+
+}
+int main()
+{
+    int n;
+    cin>>n;
+    pattern(n);
+    return 0;
+}
+
+
+
